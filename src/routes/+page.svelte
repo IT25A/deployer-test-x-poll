@@ -8,3 +8,4 @@
 <p>
 	Also check out <a href="/oidc-example">the OIDC example</a>.
 </p>
+<a href="./create-poll"><button> Create new Poll here</button></a>
