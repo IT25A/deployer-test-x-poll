@@ -44,7 +44,8 @@ export const auth = betterAuth({
 							username: profile.preferred_username,
 							sub: profile.sub
 						};
-					}
+					},
+					overrideUserInfo: true
 				}
 			]
 		}),
