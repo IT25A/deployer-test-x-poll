@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/IT25A/deploy-workflows/main/schema/it25a.schema.json
 # SvelteKit app with a PostgreSQL database, OpenID Connect login, plain settings and secrets
 version: 1
-compose: docker-compose.yml          # defines the database, see docker-compose.yml
+compose: compose.it25a.yml          # defines the database, see compose.it25a.yml
 services:
   app:
     build: .
@@ -20,4 +20,4 @@ services:
     secrets:
       - OIDC_CLIENT_SECRET
       - AUTH_SECRET
-      - POSTGRES_PASSWORD                              # also used by the database in docker-compose.yml
+      - POSTGRES_PASSWORD                              # also used by the database in compose.it25a.yml
